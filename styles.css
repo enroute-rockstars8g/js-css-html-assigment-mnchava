@@ -1,3 +1,8 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
 #header {
 	display: flex;
 	justify-content: center;
@@ -7,15 +12,66 @@
 
 .nombre {
 	color: black;
-	font-family: monospace;
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 2.5rem;
-  text-shadow: 3px 3px rgb(0, 180, 80);
-	margin-left: 24px;
+  text-shadow: 3px 2px rgb(0, 180, 80);
+	margin: 0 24px;
 }
 
 .profile {
+	object-fit: cover;
 	width: 100px;
 	height: 100px;
 	clip-path: circle();
-	object-fit: cover;
+}
+
+.about-me {
+	text-align: center;
+	margin: 24px 15%;
+}
+
+.bio {
+	display: inline;
+	padding: 3px 4px 3px 4px;
+	background-color: black;
+	box-shadow: 5px 5px rgb(0, 180, 80);
+	
+	color: white;
+	font-family: 'Comfortaa';
+	font-weight: 700;
+	line-height: 1.6rem;
+}
+
+.gif {
+	display: block;
+	height: 130px;
+	width: 130px;
+	box-shadow: 5px 5px rgb(0, 180, 80);
+	margin: 12px calc(50% - 65px);
+}
+
+.another-div {
+	display: flex;
+	justify-content: center;
+}
+
+.calcWrap {
+	position: relative;
+	display: flex;
+	margin: 8px 12px;
+}
+
+span {
+	white-space: nowrap;
+	color: white;
+	background-color: black;
+	padding: 6px 8px 6px 4px;
+	border-radius: 0 20px 20px 0;
+}
+
+input {
+	display: block;
+	white-space: nowrap;
+	padding: 4px 6px;
+	border-radius: 20px 0 0 20px;
 }

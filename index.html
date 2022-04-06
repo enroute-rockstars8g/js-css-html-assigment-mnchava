@@ -5,27 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <script src="./index.js" defer></script>
+
+    <title>Chava Uribe</title>
   </head>
   <body>
     <header id="header">
       <h1 class="nombre">Chava Uribe Ferrer</h1>
     </header>
 
-    <!-- Cuantos años tengo, breve resumen (con personalidad), Motivaciones personales -->
-    <div class="otherDiv">Resumen bien mamalansky de los Rockstars 8G</div>
-    <!-- Recurso del DOM  -->
-    <!-- Fibonacci (1,0) (2,1) (3,1) (4,2) (5,3) (6,5)-->
-    <div class="otherDiv">
-      <input type="text" id="inputFibo" />
-      <button onclick="fibo()">Aceptar</button>
-      <div id="fiboContainer"></div>
+    <div class="about-me">
+      <p class="bio">
+        I'm 24, and since I was a kid I love taking things apart to learn how
+        they work, then finding out I lost a screw when putting it back
+        together.<br /><br />
+        I remember my first experience with a computer, when in the computer lab
+        in elementary school they showed me how to open Word and write my
+        name.<br />
+        Mind blown.
+      </p>
+      <img
+        src="https://media4.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif?cid=ecf05e47bbk69wwmtdzqtm9zqxlusybftv35ormprykrdl54&rid=giphy.gif&ct=g"
+        alt="gif"
+        class="gif"
+      />
+      <p class="bio">
+        Since then I've been fascinated by technology, especially software and
+        how I can use it to solve problems.
+        <br /><br />
+        I want to learn and grow to be a great Backend Developer, and I do my
+        best work when focused and in the zone to finish a task.
+      </p>
     </div>
-    <!-- Factorial (0!,1) (1!,1) (2!,1*2=2) (3!,1*2*3=6) (4!,1*2*3*4=24) (5!,1*2*3*4*5=120)-->
-    <div class="otherDiv">
-      <input type="text" />
-      <button>Aceptar</button>
+    <div class="another-div">
+      <div class="calcWrap">
+        <input type="text" id="inputFibo" />
+        <span id="calculateFibo">Calculate</span>
+      </div>
+      <div class="calcWrap">
+        <input type="text" id="inputFact" />
+        <span id="calculateFact">Calculate</span>
+      </div>
     </div>
   </body>
 </html>
-<script src="./index.js"></script>
